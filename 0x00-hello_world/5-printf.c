@@ -2,7 +2,7 @@
 /**
  * main - print string with main function
  *
- * Description: program prints("with proper grammar, but the outcome is a piece of art,")
+ * Description:prints"with proper grammar,but the outcome is a piece of art,
  *
  * Return: 0
  */
