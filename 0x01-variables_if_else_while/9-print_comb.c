@@ -1,3 +1,10 @@
+#include <stdio.h>
+
+/**
+*main- print alphabet
+*Description: prints the alphabet in lowercase exept q,e
+*Return: 0
+*/
 int main(void)
 {
 int m;
