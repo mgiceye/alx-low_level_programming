@@ -1,4 +1,4 @@
-#inclde "main.h"
+#inculde "main.h"
 
 /**
  *print_alphabet - this program prints the alphabet,
