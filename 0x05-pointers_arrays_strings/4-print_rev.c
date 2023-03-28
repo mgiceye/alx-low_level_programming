@@ -7,10 +7,8 @@
 
 void print_rev(char *s)
 {
-	int len;
+	int len = 0;
 	int i;
-
-	len = 0;
 
 	while (*s != '\0')
 	{
@@ -19,7 +17,7 @@ void print_rev(char *s)
 	}
 	s--;
 
-	for (i = len; i >= 0; i--)
+	for (i = len; i > 0; i--)
 	{
 		_putchar(*s);
 		s--;
