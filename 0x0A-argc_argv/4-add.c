@@ -25,6 +25,6 @@ int main(int argc, char *argv[])
 	}
 	else
 		sum = sum + argv[i];
-		_putchar("%s\n", sum);
+		_putchar("%d\n", sum);
 		return (0);
 }
