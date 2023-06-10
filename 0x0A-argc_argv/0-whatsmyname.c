@@ -1,6 +1,5 @@
-#include "main.h"
 #include <stdio.h>
-
+#include "main.h"
 /**
 *main - a program that prints its name.
 *@argv: argument passed.
