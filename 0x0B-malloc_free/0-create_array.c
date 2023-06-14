@@ -5,6 +5,7 @@
 char *create_array(unsigned int size, char c)
 {
 	int *ptr;
+	int i;
 
 	ptr = malloc(sizeof(c) * size);
 
@@ -12,8 +13,6 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-
-	unsigned int i;
 
 	for (i = 0; i < size; i++)
 	{
