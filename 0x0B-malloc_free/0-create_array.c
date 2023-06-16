@@ -2,10 +2,22 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ * create_array - create an arry of size with char c
+ * @size: unsigned int type
+ * @c: char type
+ * Return: pointer
+ */
+
 char *create_array(unsigned int size, char c)
 {
 	int *ptr;
 	unsigned int i;
+
+	if (size == 0)
+	{
+		return (NULL);
+	}
 
 	ptr = malloc(sizeof(char) * size);
 
@@ -18,5 +30,6 @@ char *create_array(unsigned int size, char c)
 	{
 		ptr[i] = c;
 	}
-	return (0);
+	ptr[i] = '\0';
+	return (ptr);
 }
