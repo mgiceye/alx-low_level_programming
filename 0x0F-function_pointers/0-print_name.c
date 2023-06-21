@@ -5,9 +5,9 @@
  *  @name: pointer to name.
  * @f: pointer to function.
  *
- *Return : success.
+ *Return : void.
  */
 void print_name(char *name, void (*f)(char *))
 {
-	(*f)(name);
+	f(name);
 }
