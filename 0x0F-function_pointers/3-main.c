@@ -23,23 +23,28 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	if ((argv[2][0] == '/' || argv[2][0] == '%') && num2 == 0)
-	{
-		printf("Error\n");
-		return (100);
-	}
+if (strcmp(argv[2], "/") == 0 && num2 == 0)
+{
+	printf("Error\n");
+	return (100);
+}
+else if (strcmp(argv[2], "%") == 0 && num2 == 0)
+{
+	printf("Error\n");
+	return (100);
+}
 
-	op_func = get_op_func(argv[2]);
+op_func = get_op_func(argv[2]);
 
-	if (op_func == NULL)
-	{
-		printf("Error\n");
-		return (99);
-	}
+if (op_func == NULL)
+{
+	printf("Error\n");
+	return (99);
+}
 
-	result = op_func(num1, num2);
+result = op_func(num1, num2);
 
-	printf("%d\n", result);
+printf("%d\n", result);
 
-	return (0);
+return (0);
 }
